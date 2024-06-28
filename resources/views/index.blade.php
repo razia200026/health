@@ -3,13 +3,7 @@
 <head>
 
      <title>Health - Medical Website Template</title>
-<!--
 
-Template 2098 Health
-
-http://www.tooplate.com/view/2098-health
-
--->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -82,9 +76,26 @@ http://www.tooplate.com/view/2098-health
                          <li><a href="#team" class="smoothScroll">Doctors</a></li>
                          <li><a href="#news" class="smoothScroll">News</a></li>
                          <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         @guest
+                         <li><a href="{{ route('login') }}">Login</a></li>
+                         @if (Route::has('register'))
+                         <li><a href="{{ route('register') }}">Register</a></li>
+                         @endif
+                         @else
+                         <li>
+                              <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                   Logout
+                              </a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                   @csrf
+                              </form>
+                         </li>
+                         @endguest
                          <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
                     </ul>
                </div>
+
 
           </div>
      </section>
