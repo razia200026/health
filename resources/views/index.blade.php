@@ -8,12 +8,12 @@
     <meta name="keywords" content="">
     <meta name="author" content="Tooplate">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tooplate-style.css') }}">
 </head>
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -46,7 +46,7 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                 </button>
-                <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+                <a href="{{ url('/') }}" class="navbar-brand"><i class="fa fa-h-square"></i>Health Center</a>
             </div>
 
             <!-- MENU LINKS -->
@@ -112,13 +112,13 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>ealth Care Center</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>Health Care Center</h2>
                         <div class="wow fadeInUp" data-wow-delay="0.8s">
-                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka,Bangladesh. </p>
-                            <p>We offer centers for Level 1 trauma,burn,stroke,cardiovascular disease and sickle cell disease. </p>
+                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
+                            <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
                         </div>
                         <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                            <img src="images/author-image.jpg" class="img-responsive" alt="">
+                            <img src="{{ asset('images/author-image.jpg') }}" class="img-responsive" alt="">
                             <figcaption>
                                 <h3>Dr. Razia</h3>
                                 <p>General Principal</p>
@@ -142,34 +142,34 @@
                 <div class="clearfix"></div>
                 <div class="col-md-4 col-sm-6">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="images/team-image1.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('images/team-image1.jpg') }}" class="img-responsive" alt="">
                         <div class="team-info">
                             <h3>Prof. Bahar Hussain</h3>
                             <p>Senior Consultant</p>
                             <div class="team-contact-info">
                                 <p><i class="fa fa-phone"></i> 015289640</p>
-                                <p><i class="fa fa-envelope-o"></i> <a href="#">baharhussain@gmail.com</a></p>
+                                <p><i class="fa fa-envelope-o"></i> <a href="mailto:baharhussain@gmail.com">baharhussain@gmail.com</a></p>
                             </div>
                             <ul class="social-icon">
                                 <li><a href="#" class="fa fa-linkedin-square"></a></li>
-                                <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                <li><a href="mailto:baharhussain@gmail.com" class="fa fa-envelope-o"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="images/team-image2.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('images/team-image2.jpg') }}" class="img-responsive" alt="">
                         <div class="team-info">
                             <h3>Dr. Asif Manwar</h3>
-                            <p>Associate Consultant,Cardiology</p>
+                            <p>Associate Consultant, Cardiology</p>
                             <div class="team-contact-info">
                                 <p><i class="fa fa-phone"></i> 018957463</p>
-                                <p><i class="fa fa-envelope-o"></i> <a href="#">asifmanwar@gmail.com</a></p>
+                                <p><i class="fa fa-envelope-o"></i> <a href="mailto:asifmanwar@gmail.com">asifmanwar@gmail.com</a></p>
                             </div>
                             <ul class="social-icon">
                                 <li><a href="#" class="fa fa-facebook-square"></a></li>
-                                <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                <li><a href="mailto:asifmanwar@gmail.com" class="fa fa-envelope-o"></a></li>
                                 <li><a href="#" class="fa fa-flickr"></a></li>
                             </ul>
                         </div>
@@ -177,17 +177,18 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="images/team-image3.jpg" class="img-responsive" alt="">
+                        <img src="{{ asset('images/team-image3.jpg') }}" class="img-responsive" alt="">
                         <div class="team-info">
-                            <h3>Prof. Dr. Sultana Haque</h3>
-                            <p>Oral & Dental Surgeon</p>
+                            <h3>Dr. Mahmudur Rahman</h3>
+                            <p>Medical Officer</p>
                             <div class="team-contact-info">
-                                <p><i class="fa fa-phone"></i> 013598641</p>
-                                <p><i class="fa fa-envelope-o"></i> <a href="#">sultanahaque@gmail.com</a></p>
+                                <p><i class="fa fa-phone"></i> 017846300</p>
+                                <p><i class="fa fa-envelope-o"></i> <a href="mailto:mahmudurrahman@gmail.com">mahmudurrahman@gmail.com</a></p>
                             </div>
                             <ul class="social-icon">
                                 <li><a href="#" class="fa fa-twitter"></a></li>
-                                <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                <li><a href="mailto:mahmudurrahman@gmail.com" class="fa fa-envelope-o"></a></li>
+                                <li><a href="#" class="fa fa-skype"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -196,127 +197,88 @@
         </div>
     </section>
 
-   <!-- MAKE AN APPOINTMENT -->
-<section id="appointment" data-stellar-background-ratio="3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <img src="images/appointment-image.jpg" class="img-responsive" alt="">
-            </div>
-            <div class="col-md-6 col-sm-6">
-                @auth
-                    <!-- APPOINTMENT FORM -->
-                    <form id="appointment-form" role="form" method="post" action="{{ route('appointments.store') }}">
-                        @csrf
-                        <!-- SECTION TITLE -->
-                        <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                            <h2>Make an appointment</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="col-md-6 col-sm-6">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <label for="date">Select Date</label>
-                                <input type="date" name="date" class="form-control" required>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <label for="department">Select Department</label>
-                                <select class="form-control" name="department" required>
-                                    <option>General Health</option>
-                                    <option>Cardiology</option>
-                                    <option>Dental</option>
-                                    <option>Medical Research</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
-                                <label for="message">Additional Message</label>
-                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                            </div>
-                        </div>
-                    </form>
-                @else
-                    <!-- LOGIN PROMPT -->
-                    <div class="alert alert-warning">
-                        <p>You need to <a href="{{ route('login') }}">log in</a> to make an appointment.</p>
-                    </div>
-                @endauth
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!-- FOOTER -->
-    <footer data-stellar-background-ratio="5">
+    <!-- APPOINTMENT -->
+    <section id="appointment" data-stellar-background-ratio="3">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="footer-thumb">
-                        <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                        <p>18/F , Bir Uttam Qazi Nuruzzaman Sarak , West Panthapath , Dhaka 1205.</p>
-                        <div class="contact-info">
-                            <p><i class="fa fa-phone"></i> +8809658317</p>
-                            <p><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></p>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-sm-6">
+                    <img src="{{ asset('images/appointment-image.jpg') }}" class="img-responsive" alt="">
                 </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="footer-thumb">
-                        <div class="opening-hours">
-                            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
-                            <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
-                            <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
-                            <p>Sunday <span>Closed</span></p>
+                <div class="col-md-6 col-sm-6">
+                    @auth
+                        <!-- APPOINTMENT FORM -->
+                        <form id="appointment-form" role="form" method="post" action="{{ route('appointments.store') }}">
+                            @csrf
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                <h2>Make an appointment</h2>
+                            </div>
+                            <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="col-md-6 col-sm-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label for="date">Select Date</label>
+                                    <input type="date" name="date" class="form-control" required>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <label for="department">Select Department</label>
+                                    <select class="form-control" name="department" required>
+                                        <option>General Health</option>
+                                        <option>Cardiology</option>
+                                        <option>Dental</option>
+                                        <option>Medical Research</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                                    <label for="message">Additional Message</label>
+                                    <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                                    <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                                </div>
+                            </div>
+                        </form>
+                    @else
+                        <!-- LOGIN PROMPT -->
+                        <div class="alert alert-warning">
+                            <p>You need to <a href="{{ route('login') }}">log in</a> to make an appointment.</p>
                         </div>
-                        <ul class="social-icon">
-                            <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                            <li><a href="#" class="fa fa-twitter"></a></li>
-                            <li><a href="#" class="fa fa-instagram"></a></li>
-                        </ul>
-                    </div>
+                    @endauth
                 </div>
-                <div class="col-md-12 col-sm-12 border-top">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="copyright-text">
-                            <p>Copyright &copy; 2024 DIIT Health Care Center
-                                | Design: code_chasers</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="footer-link">
-                            <a href="#">Laboratory Tests</a>
-                            <a href="#">Departments</a>
-                            <a href="#">Insurance Policy</a>
-                            <a href="#">Careers</a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-2 text-align-center">
-                        <div class="angle-up-btn">
-                            <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <p>&copy; 2024 DIIT Health Care Center. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <ul class="social-icon">
+                        <li><a href="#" class="fa fa-facebook-square"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>
