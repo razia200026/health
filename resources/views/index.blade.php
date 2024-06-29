@@ -55,7 +55,7 @@
                     <li><a href="#top" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About Us</a></li>
                     <li><a href="#team" class="smoothScroll">Doctors</a></li>
-                    <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                    <!-- <li><a href="#google-map" class="smoothScroll">Contact</a></li> -->
                     @guest
                         <li><a href="{{ route('login') }}">Login</a></li>
                         @if (Route::has('register'))
