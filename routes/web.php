@@ -24,3 +24,11 @@ Route::post('/appointments', [AppointmentController::class, 'store'])->name('app
 Auth::routes();
 
 
+
+
+
+use App\Http\Controllers\HomeController;
+
+// User profile route
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
