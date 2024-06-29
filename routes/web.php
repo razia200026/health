@@ -11,8 +11,16 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// routes/web.php
-use App\Http\Controllers\AppointmentController;
 
+
+
+use App\Http\Controllers\AppointmentController;
+use Illuminate\Support\Facades\Auth;
+
+// Routes for appointments
 Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+
+// Authentication routes
+Auth::routes();
+
 

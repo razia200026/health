@@ -197,62 +197,63 @@
         </div>
     </section>
 
-    <!-- APPOINTMENT -->
-    <section id="appointment" data-stellar-background-ratio="3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <img src="{{ asset('images/appointment-image.jpg') }}" class="img-responsive" alt="">
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    @auth
-                        <!-- APPOINTMENT FORM -->
-                        <form id="appointment-form" role="form" method="post" action="{{ route('appointments.store') }}">
-                            @csrf
-                            <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                <h2>Make an appointment</h2>
-                            </div>
-                            <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                <div class="col-md-6 col-sm-6">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <label for="date">Select Date</label>
-                                    <input type="date" name="date" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <label for="department">Select Department</label>
-                                    <select class="form-control" name="department" required>
-                                        <option>General Health</option>
-                                        <option>Cardiology</option>
-                                        <option>Dental</option>
-                                        <option>Medical Research</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
-                                    <label for="message">Additional Message</label>
-                                    <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                    <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                                </div>
-                            </div>
-                        </form>
-                    @else
-                        <!-- LOGIN PROMPT -->
-                        <div class="alert alert-warning">
-                            <p>You need to <a href="{{ route('login') }}">log in</a> to make an appointment.</p>
+<!-- APPOINTMENT -->
+<section id="appointment" data-stellar-background-ratio="3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img src="{{ asset('images/appointment-image.jpg') }}" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                @auth
+                    <!-- APPOINTMENT FORM -->
+                    <form id="appointment-form" role="form" method="post" action="{{ route('appointments.store') }}">
+                        @csrf
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                            <h2>Make an appointment</h2>
                         </div>
-                    @endauth
-                </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="col-md-6 col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="date">Select Date</label>
+                                <input type="date" name="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <label for="department">Select Department</label>
+                                <select class="form-control" name="department" required>
+                                    <option>General Health</option>
+                                    <option>Cardiology</option>
+                                    <option>Dental</option>
+                                    <option>Medical Research</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                                <label for="message">Additional Message</label>
+                                <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
+                                <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
+                            </div>
+                        </div>
+                    </form>
+                @else
+                    <!-- LOGIN PROMPT -->
+                    <div class="alert alert-warning">
+                        <p>You need to <a href="{{ route('login') }}">log in</a> to make an appointment. Don't have an account? <a href="{{ route('register') }}">Register here</a>.</p>
+                    </div>
+                @endauth
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer>
