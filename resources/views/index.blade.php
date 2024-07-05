@@ -46,7 +46,7 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                 </button>
-                <a href="{{ url('/') }}" class="navbar-brand"><i class="fa fa-h-square"></i>Health Center</a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="images/logo.png" width="150px" alt=""></a>
             </div>
 
             <!-- MENU LINKS -->
@@ -86,8 +86,10 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item item-first">
                         <div class="caption">
+                       
                             <div class="col-md-offset-1 col-md-10">
-                                <h3>Discovering and delivering</h3>
+                            <img src="images/Fav.png" style="width: 100px; display: block; margin: 0 auto;">
+                                <h2>Welcome To</h2>
                                 <h1>Life-changing care</h1>
                                 <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                             </div>
@@ -98,7 +100,7 @@
                             <div class="col-md-offset-1 col-md-10">
                                 <h3>Let's make your life happier</h3>
                                 <h1>Healthy Living</h1>
-                                <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More About Us</a>
+                                <a href="#about" class="section-btn btn btn-default btn-primary smoothScroll">More About Us</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +115,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>Health Care Center</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>ealth Care Center</h2>
                         <div class="wow fadeInUp" data-wow-delay="0.8s">
                             <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
                             <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
