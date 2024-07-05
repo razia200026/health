@@ -108,31 +108,6 @@
             </div>
         </div>
     </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>ealth Care Center</h2>
-                        <div class="wow fadeInUp" data-wow-delay="0.8s">
-                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
-                            <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
-                        </div>
-                        <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                            <img src="{{ asset('images/author-image.jpg') }}" class="img-responsive" alt="">
-                            <figcaption>
-                                <h3>Dr. Razia</h3>
-                                <p>General Principal</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- TEAM -->
     <section id="team" data-stellar-background-ratio="1">
         <div class="container">
@@ -200,6 +175,30 @@
         </div>
     </section>
 
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>ealth Care Center</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
+                            <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
+                        </div>
+                        <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                            <img src="{{ asset('images/author-image.jpg') }}" class="img-responsive" alt="">
+                            <figcaption>
+                                <h3>Dr. Razia</h3>
+                                <p>General Principal</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- APPOINTMENT -->
 <section id="appointment" data-stellar-background-ratio="3">
     <div class="container">
