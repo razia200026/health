@@ -28,15 +28,20 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-7 text-align-right">
+                <div class="col-md-8 col-sm-7">
                     <span class="phone-icon"><i class="fa fa-phone"></i> +8809658317</span>
                     <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
                     <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></span>
                 </div>
+                <ul class="social-icon" style="text-align: right">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
             </div>
         </div>
     </header>
-
+ 
     <!-- MENU -->
     <section class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
@@ -54,7 +59,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#top" class="smoothScroll">Home</a></li>
                     <li><a href="#about" class="smoothScroll">About Us</a></li>
-                    <li><a href="#team" class="smoothScroll">Doctors</a></li>
+                    <li><a href="#team" class="smoothScroll">Doctor's</a></li>
+                    <li><a href="#special" class="smoothscroll">Speciality's</a></li>
+                    <li><a href="#patient" class="smoothscroll">Patient Reviews</a></li>
+
                     <!-- <li><a href="#google-map" class="smoothScroll">Contact</a></li> -->
                     @guest
                         <li><a href="{{ route('login') }}">Login</a></li>
@@ -86,16 +94,15 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item item-first">
                         <div class="caption">
-                       
-                            <div class="col-md-offset-1 col-md-10">
+                        <div class="col-md-offset-1 col-md-10">
                             <img src="images/Fav.png" style="width: 100px; display: block; margin: 0 auto;">
-                                <h2>Welcome To</h2>
-                                <h1>Life-changing care</h1>
+                                <h3>Welcome To</h3>
+                                <h2 style="color:#ffff">Life-changing DIIT <i class="fa fa-h-square"></i>ealth Care</h2>
                                 <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                             </div>
                         </div>
                     </div>
-                    <div class="item item-second">
+                    <div class="item item-second" >
                         <div class="caption">
                             <div class="col-md-offset-1 col-md-10">
                                 <h3>Let's make your life happier</h3>
@@ -108,9 +115,33 @@
             </div>
         </div>
     </section>
-    <!-- TEAM -->
-    <section id="team" data-stellar-background-ratio="1">
+    <!-- ABOUT -->
+<section id="about">
         <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="about-info">
+                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">DIIT <i class="fa fa-h-square" style="color:#1B61AB"></i>ealth Care Center</h2>
+                        <div class="wow fadeInUp" data-wow-delay="0.8s">
+                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
+                            <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
+                        </div>
+                        <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                   <figcaption>
+                                        <h3>Dr. Razia</h3>
+                                        <p>General Principal</p>
+                                   </figcaption>
+                              </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TEAM -->
+    <section id="team" data-stellar-background-ratio="1" style="background-color: #89CFF0">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <div class="about-info">
@@ -174,31 +205,7 @@
             </div>
         </div>
     </section>
-
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to DIIT <i class="fa fa-h-square"></i>ealth Care Center</h2>
-                        <div class="wow fadeInUp" data-wow-delay="0.8s">
-                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
-                            <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
-                        </div>
-                        <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                            <img src="{{ asset('images/author-image.jpg') }}" class="img-responsive" alt="">
-                            <figcaption>
-                                <h3>Dr. Razia</h3>
-                                <p>General Principal</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 <!-- APPOINTMENT -->
 <section id="appointment" data-stellar-background-ratio="3">
     <div class="container">
