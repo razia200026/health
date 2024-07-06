@@ -167,4 +167,55 @@
   position: relative;
   z-index: 1;
   height: 100%;
-  width: 100%; }
+  width: 100%; } 
+
+  #speciality{
+    display: flex;
+    justify-content: center;
+    background-color:#F5F7F8;
+    
+  }
+  .head h2{
+    text-align: center;
+  }
+ .surgeryCard{
+  padding: 22px;
+  background-color:#ffff;
+  text-align: center;
+  border-radius: 5px;
+  margin-inline: 20px;
+
+}
+.surgeryCard img{
+  width: 150px;
+}
+.surgeryCard h3{
+  color:#1B61AB;
+}
+.surgeryCard p{
+  margin-top: 12px;
+}
+.reviews{
+  width: 800px;
+  height: 300px;
+  align-items:center;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+
+}
+ 
+.patientCard{
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+   transition:all 2s ease;
+}
+.patientCard img{
+   width: 350px;
+   margin-inline: 11px;
+   border-radius: 5px;
+   
+}

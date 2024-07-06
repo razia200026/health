@@ -25,55 +25,7 @@
     </section>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-7 text-align-right">
-                    <span class="phone-icon"><i class="fa fa-phone"></i> +8809658317</span>
-                    <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
-                    <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- MENU -->
-    <section class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a href="{{ url('/') }}" class="navbar-brand"><i class="fa fa-h-square"></i>Health Center</a>
-            </div>
-
-            <!-- MENU LINKS -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-
-                    @guest
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @endif
-                    @else
-                        <li class="appointment-btn">
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                               Logout
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </li>
-                    @endguest
-                    <!-- <li class="appointment-btn"><a href="{{ url('/') }}">Make an appointment</a></li> -->
-                </ul>
-            </div>
-        </div>
-    </section>
+    @include('layouts/header');
 
     <!-- HEADER -->
     <header>
@@ -136,7 +88,7 @@
                               <p>18/F , Bir Uttam Qazi Nuruzzaman Sarak , West Panthapath , Dhaka 1205.</p>
                               <div class="contact-info">
                                    <p><i class="fa fa-phone"></i> +8809658317</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">diitlife@gmail.com</a></p>
                               </div>
                          </div>
                     </div>  

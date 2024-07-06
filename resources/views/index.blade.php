@@ -25,67 +25,7 @@
     </section>
 
     <!-- HEADER -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-7">
-                    <span class="phone-icon"><i class="fa fa-phone"></i> +8809658317</span>
-                    <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM (Mon-Fri)</span>
-                    <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></span>
-                </div>
-                <ul class="social-icon" style="text-align: right">
-                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                   <li><a href="#" class="fa fa-twitter"></a></li>
-                                   <li><a href="#" class="fa fa-instagram"></a></li>
-                              </ul>
-            </div>
-        </div>
-    </header>
- 
-    <!-- MENU -->
-    <section class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                    <span class="icon icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ url('/') }}"><img src="images/logo.png" width="150px" alt=""></a>
-            </div>
-
-            <!-- MENU LINKS -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#top" class="smoothScroll">Home</a></li>
-                    <li><a href="#about" class="smoothScroll">About Us</a></li>
-                    <li><a href="#team" class="smoothScroll">Doctor's</a></li>
-                    <li><a href="#special" class="smoothscroll">Speciality's</a></li>
-                    <li><a href="#patient" class="smoothscroll">Patient Reviews</a></li>
-
-                    <!-- <li><a href="#google-map" class="smoothScroll">Contact</a></li> -->
-                    @guest
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @endif
-                    @else
-                    <li class="smoothScroll"><a href="{{ url('/home') }}">Profile</a></li>
-                        <li>
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                               Logout
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </li>
-                    @endguest
-                    <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    @include('layouts/header');
 
     <!-- HOME -->
     <section id="home" class="slider" data-stellar-background-ratio="0.5">
@@ -97,7 +37,7 @@
                         <div class="col-md-offset-1 col-md-10">
                             <img src="images/Fav.png" style="width: 100px; display: block; margin: 0 auto;">
                                 <h3>Welcome To</h3>
-                                <h2 style="color:#ffff">Life-changing DIIT <i class="fa fa-h-square"></i>ealth Care</h2>
+                                <h2 style="color:#ffff">Life-changing DIIT Life Care</h2>
                                 <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our Doctors</a>
                             </div>
                         </div>
@@ -118,18 +58,18 @@
     <!-- ABOUT -->
 <section id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
+            <div class="row" >
+                <div style="text-align:center">
                     <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.6s">DIIT <i class="fa fa-h-square" style="color:#1B61AB"></i>ealth Care Center</h2>
+                        <h2 style="color:#1B61AB" class="wow fadeInUp" data-wow-delay="0.6s">DIIT Life Care Center</h2>
                         <div class="wow fadeInUp" data-wow-delay="0.8s">
-                            <p>DIIT Health Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
+                            <p>DIIT Life Care Center is an acute care facility serving as the major referral center for Dhaka, Bangladesh. </p>
                             <p>We offer centers for Level 1 trauma, burn, stroke, cardiovascular disease, and sickle cell disease. </p>
                         </div>
                         <figure class="profile wow fadeInUp" data-wow-delay="1s">
                                    <img src="images/author-image.jpg" class="img-responsive" alt="">
                                    <figcaption>
-                                        <h3>Dr. Razia</h3>
+                                        <h3 style="color:#1B61AB">Dr. Razia</h3>
                                         <p>General Principal</p>
                                    </figcaption>
                               </figure>
@@ -143,9 +83,9 @@
     <section id="team" data-stellar-background-ratio="1" style="background-color: #89CFF0">
         <div class="container" >
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-12 col-sm-6">
                     <div class="about-info">
-                        <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.1s" style="text-align:center">Our Doctors</h2>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -205,6 +145,62 @@
             </div>
         </div>
     </section>
+    <!-- Speciality -->
+    <section id="speciality">
+        <div class="container">
+            <div  class="row">
+                <div class="head">
+                    <h2>Our Speciality</h2>
+                </div>
+            <div class="surgeryCard col-md-3 col-sm-6">
+                <img src="images/s1.png" alt="">
+                    <h3>Succesfully Knee Surgery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+                <div class="surgeryCard  col-md-4 col-sm-6">
+                    <img src="images/s2.png" alt="">
+                    <h3>Succesfully Leg Surgery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                </div>
+                <div class="surgeryCard  col-md-3 col-sm-6">
+                    <img src="images/s3.png" alt="">
+                    <h3>Succesfully Tendon Surgery</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- patient review -->
+     <section id="patient" style="background-color: #89CFF0">
+        <div class="container">
+            <div class="row">
+            <div class="head">
+                <h2>Our Patient's Review</h2>
+            </div>
+            <div class="reviews">
+                <div class="patientCard">
+                    <img src="images/p1.png" alt="">
+                    <img src="images/p2.png" alt="">
+
+                </div>
+                <div class="patientCard">
+                    <img src="images/p3.jpg" alt="">
+                    <img src="images/p4.jpg" alt="">
+                     
+
+                      
+                </div>
+                <div class="patientCard">
+                    <img src="images/p5.jpg" alt="">  
+                    <img src="images/p6.jpg" alt="">                   
+                   
+                </div>
+            </div>
+            </div>
+        </div>
+     </section>
+
     
 <!-- APPOINTMENT -->
 <section id="appointment" data-stellar-background-ratio="3">
@@ -274,7 +270,7 @@
                               <p>18/F , Bir Uttam Qazi Nuruzzaman Sarak , West Panthapath , Dhaka 1205.</p>
                               <div class="contact-info">
                                    <p><i class="fa fa-phone"></i> +8809658317</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">diithealth@gmail.com</a></p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">diitlife@gmail.com</a></p>
                               </div>
                          </div>
                     </div>  
@@ -296,7 +292,7 @@
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2024 DIIT Health Care Center 
+                                   <p>Copyright &copy; 2024 DIIT Life Care Center 
                                    
                                    | Design: code_chasers</p>
                               </div>
@@ -328,5 +324,6 @@
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
+     <script src="js/patientreview.js"></script>
 </body>
 </html>
